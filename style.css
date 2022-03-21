@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+header {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  /*background-color: rgba(0, 0, 0, 0.2);*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #06820b;
+  font-size: 1.5rem;
+}
+.logo-wrapper {
+  padding: 1rem;
+  width: 300px;
+  height: 125.08px;
+}
+.logo-wrapper img {
+  height: 100%;
+}
+.menu {
+  padding: 1rem;
+}
+
+main {
+  /*  background-color: rgba(0, 0, 0, 0.6);*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1080px;
+  height: 480px;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 480px;
+  height: 480px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.box img {
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box h3 {
+  vertical-align: middle;
+}
+.title {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  top: -15%;
+}
+.title h2 {
+  color: #06820b;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.boxer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.boxer:hover {
+  transform: scale(105%);
+}
+h3 {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  text-shadow: 0rem 0rem 1rem black;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  position: fixed;
+  /* background-color: rgba(0, 0, 0, 0.6);*/
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  /*  background-color: rgba(255, 0, 0, 0.6);*/
+  width: 160px;
+  height: 30px;
+}
+.icons img {
+  height: 30px;
+  cursor: pointer;
+}
+
+/* LOCATIONS */
+.main-loc {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 810px;
+  height: 740px;
+}
