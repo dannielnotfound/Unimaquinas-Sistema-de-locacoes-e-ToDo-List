@@ -7,6 +7,7 @@
     <title>Unimaquinas - Locações</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="geral">
@@ -22,7 +23,23 @@
             </div>
         </header>
         <div class="main-loc">
-            
+            <div class="all-content">
+                <div class="finder">
+                    <form autocomplete="off">
+                        <label class='finderIDclass' id='finderID'for="searcher">Qual código você deseja locar?</label>
+                        <input type="text" id="searcher">
+                        <span class="iconify" data-icon="ant-design:search-outlined" data-width="40" data-height="40"></span>
+                    </form>
+                </div>
+                <div class="loc-body">
+                    <div class="flex-body">
+                        <div class="textBox">
+                            <p id="response"></p>
+                        </div>
+                        <div class="locationBox"></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer>
             <div class="icons">
@@ -32,6 +49,6 @@
             </div>
         </footer>
     </div>
-    
 </body>
+<script src="script.js"></script>
 </html>

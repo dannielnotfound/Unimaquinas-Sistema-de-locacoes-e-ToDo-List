@@ -60,7 +60,7 @@ main {
 }
 
 .box {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   width: 480px;
   height: 480px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -94,9 +94,10 @@ main {
   cursor: pointer;
   transition: 0.3s;
 }
-.boxer:hover {
+.boxer:hover{
   transform: scale(105%);
 }
+
 h3 {
   position: absolute;
   z-index: 1;
@@ -132,11 +133,100 @@ footer {
 
 /* LOCATIONS */
 .main-loc {
-  background-color: rgba(0, 0, 0, 0.6);
+ /* background-color: rgba(0, 0, 0, 0.6);*/
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -45%);
   width: 810px;
   height: 740px;
+
 }
+.loc-body{
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+.all-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.finder{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    /*border: 1px solid black;*/
+   /* background-color: rgba(0, 255, 0, 0.205);*/
+}
+.finder>form{
+  height: 100%;
+}
+
+#searcher{
+    outline: none;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: italic;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
+}
+#searcher:active ~ #finderID{
+    display: none;
+}
+.finderIDclass{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    text-align: center;
+    line-height: 60px;
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.showLabel{
+    display: none;
+}
+
+.loc-body{
+    width: 100%;
+    height: 640px;
+    background-color: #B5DAB6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* background-color: rgba(0, 0, 255, 0.205);*/
+}
+.flex-body{
+  height: 540px;
+  width: 630px;
+  /*background: cadetblue;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.textBox{
+  width: 100%;
+  height: 54px;
+  background-color: #81C083;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+}
+.locationBox{
+  width: 100%;
+  height: 480px;
+  background-color: #81C083;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+}
+/*
+.locBox{
+  height: 200px;
+  width: 200px;
+  background-color: black;
+}*/
