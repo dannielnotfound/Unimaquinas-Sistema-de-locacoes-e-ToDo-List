@@ -1,4 +1,4 @@
- @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /* font-family: 'Roboto', sans-serif; */
 * {
   box-sizing: border-box;
@@ -9,13 +9,6 @@
 body {
   width: 100vw;
   height: 100vh;
-}
-.geral{
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 }
 header {
   position: relative;
@@ -51,14 +44,12 @@ header {
 
 main {
   /*  background-color: rgba(0, 0, 0, 0.6);*/
-  margin: 0 auto;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 1080px;
   height: 480px;
-  /*
-  display: flex;
-  justify-content: center;
-  align-items: center;*/
 }
 .content {
   width: 100%;
@@ -119,8 +110,9 @@ h3 {
 /* FOOTER */
 footer {
   width: 100%;
-  position: relative;
- /* background-color: rgba(0, 0, 0, 0.6);*/
+  position: fixed;
+  /* background-color: rgba(0, 0, 0, 0.6);*/
+  bottom: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,7 +120,7 @@ footer {
 }
 
 .icons {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   /*  background-color: rgba(255, 0, 0, 0.6);*/
   width: 160px;
@@ -142,11 +134,12 @@ footer {
 /* LOCATIONS */
 .main-loc {
  /* background-color: rgba(0, 0, 0, 0.6);*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
   width: 810px;
   height: 740px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
 }
 .loc-body{
@@ -156,7 +149,6 @@ footer {
 }
 .all-content{
     height: 100%;
-    width: 810px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -265,8 +257,7 @@ footer {
 .availableLocations{
   width: 60%;
   height: 390px;
-  /*background-color: rgb(216, 195, 195);*/
-  text-align: center;
+  background-color: rgb(216, 195, 195);
 }
 /*
 .locBox{
@@ -274,50 +265,3 @@ footer {
   width: 200px;
   background-color: black;
 }*/
-
-/* LISTA DE LOCAÇÕES */
-.list{
-  list-style: none;
-}
-.list>li{
-  background-color: #6b83fb81;
-  padding: 5px;
-  margin-top: 5px;
-  font-weight: 600;
-}
-
-/* responsividade */ 
-@media (max-width: 920px) {
-  .main-loc{
-    /*background-color: aqua;*/
-    width: 610px;
-  }
-  .all-content{
-    width: 600px;
-  }
-  .loc-body{
-    background-color: transparent;
-    box-shadow: none;
-  }
-  #idTITLE{
-    font-size: 1.2rem;
-  }
-}
-
- 
-@media (max-width: 620px) {
-  .main-loc{
-    /*background-color: aqua;*/
-    width: 610px;
-  }
-  .all-content{
-    width: 600px;
-  }
-  .loc-body{
-    background-color: transparent;
-    box-shadow: none;
-  }
-  #idTITLE{
-    font-size: 1.2rem;
-  }
-}

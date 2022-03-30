@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5500/locations.html -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unimaquinas - Locações</title>
+    <link rel="stylesheet" href="./Unimaquinas - Locações_files/style.css">
+    <script src="./Unimaquinas - Locações_files/iconify.min.js.download"></script>
+    <script src="./Unimaquinas - Locações_files/jquery.min.js.download"></script>
+</head>
+<body cz-shortcut-listen="true">
+    <div class="geral">
+        <header>
+            <div class="logo-wrapper">
+                <img src="./Unimaquinas - Locações_files/john-deere-logo-0.png" alt="">
+            </div>
+            <div class="text">
+                <h1>Unimaquinas</h1>
+            </div>
+            <div class="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--dashicons" width="27.5" height="27.5" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" data-icon="dashicons:menu-alt" data-width="27.5" data-height="27.5"><path fill="currentColor" d="M3 11h14V9H3v2zm0 5h14v-2H3v2zM3 4v2h14V4H3z"></path></svg>
+            </div>
+        </header>
+        <div class="main-loc">
+            <div class="all-content">
+                <div class="finder">
+                    <form autocomplete="off">
+                        <label class="" id="finderID" for="searcher"></label>
+                        <input type="text" id="searcher">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ant-design" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024" data-icon="ant-design:search-outlined" data-width="40" data-height="40"><path fill="currentColor" d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1c-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg>
+                    </form>
+                </div>
+                <div class="loc-body">
+                    <div class="flex-body">
+                        <div class="textBox">
+                            <p id="response">#XXXXXXX testeee</p>
+                        </div>
+                        <div class="locationBox">
+                            <div class="availableTitle"><p>Possíveis locações correspondentes</p></div>
+                            <div class="availableLocations">
+                                <ul></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="icons">
+                <img src="./Unimaquinas - Locações_files/linkedin.webp" alt="Linkedin ico">
+                <img src="./Unimaquinas - Locações_files/facebook_0.webp" alt="Facebook ico">
+                <img src="./Unimaquinas - Locações_files/instagram.webp" alt="Instagram ico">
+            </div>
+        </footer>
+    </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<script src="./Unimaquinas - Locações_files/script.js.download"></script>
+</body></html>
